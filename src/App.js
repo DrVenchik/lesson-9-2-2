@@ -4,6 +4,7 @@ import './App.css';
 import MessageHistory from './components/MessageHistory';
 
 function App() {
+  
   const messages = [{
     id: 'chat-5-1090',
     from: { name: 'Ольга' },
@@ -15,7 +16,7 @@ function App() {
     from: { name: 'Виктор' },
     type: 'message',
     time: '10:12',
-    text: 'Привет. Давай сегодня созвонимся. Проект практически готов, и у меня есть что показать.'
+    text: 'Привет. Давай сегодня созвонимся. Проект практически готов, и у меня есть что показать. Привет. Давай сегодня созвонимся. Проект практически готов, и у меня есть что показать. Привет. Давай сегодня созвонимся. Проект практически готов, и у меня есть что показать. Привет. Давай сегодня созвонимся. Проект практически готов, и у меня есть что показать. Привет. Давай сегодня созвонимся. Проект практически готов, и у меня есть что показать. Привет. Давай сегодня созвонимся. Проект практически готов, и у меня есть что показать. Привет. Давай сегодня созвонимся. Проект практически готов, и у меня есть что показать. '
   }, {
     id: 'chat-5-1092',
     from: { name: 'Ольга' },
@@ -36,19 +37,12 @@ function App() {
   }];
 
   
-  function styleCss(type) {
-    if(type === 'response') {
-      document.querySelector(".message-data").classList.add("align-right");
-      document.querySelector(".message").classList.add("float-right");
-    } 
-  }
-
   return (
     <div >
       <div className='container'>
         <div className='people-list'>человек</div>      
         <div className='chat'>
-          <MessageHistory list={messages} styleFloat={styleCss()}/>
+          <MessageHistory list={messages} />
         </div>
       </div>
     </div>

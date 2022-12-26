@@ -197,7 +197,8 @@ body {
 }
 
 .float-right {
-  float: right;
+  display: flex;
+  justify-content: right;
 }
 
 .clearfix:after {
